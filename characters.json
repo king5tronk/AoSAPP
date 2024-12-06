@@ -1,0 +1,217 @@
+[
+  {
+    "name": "Hero Grey Seer",
+    "points": 120,
+    "image": "images/greySeer.jpg"
+  },
+  {
+    "name": "Hero Vizzik Skour, Prophet of the Horned Rat",
+    "points": 450,
+    "image": "images/vizzik.jpg"
+  },
+  {
+    "name": "Hero Thanquol on BoneRipper",
+    "points": 360,
+    "image": "images/thanquol.jpg"
+  },
+  {
+    "name": "Hero Lord Skreech Verminking",
+    "points": 430,
+    "image": "images/lordSkreech.jpg"
+  },
+  {
+    "name": "Hero Verminlord Deceiver",
+    "points": 410,
+    "image": "images/lordDeceiver.jpg"
+  },
+  {
+    "name": "Hero Verminlord Warbringer",
+    "points": 350,
+    "image": "images/warbringer.jpg"
+  },
+  {
+    "name": "Hero Verminlord Corruptor",
+    "points": 360,
+    "image": "images/corruptor.jpg"
+  },
+  {
+    "name": "Hero Verminlord Warpseer",
+    "points": 340,
+    "image": "images/warpseer.jpg"
+  },
+  {
+    "name": "Hero Grey Seer On Screaming Bell",
+    "points": 350,
+    "image": "images/greySeerBell.jpg"
+  },
+  {
+    "name": "Hero Arch Warlock",
+    "points": 170,
+    "image": "images/archWarlock.jpg"
+  },
+  {
+    "name": "Hero Warlock Galvaneer",
+    "points": 140,
+    "image": "images/warlockGalvaneer.jpg"
+  },
+  {
+    "name": "Stormfiends",
+    "points": 260,
+    "image": "images/stormfiends.jpg"
+  },
+  {
+    "name": "Hero Warlock Bombardier",
+    "points": 120,
+    "image": "images/warlockBombardier.jpg"
+  },
+  {
+    "name": "Hero Warlock Engineer",
+    "points": 140,
+    "image": "images/warlockEngineer.jpg"
+  },
+  {
+    "name": "Warmachine Warp Lightning Cannon",
+    "points": 160,
+    "image": "images/warpLightningCannon.jpg"
+  },
+  {
+    "name": "Acolyte Globadiers",
+    "points": 130,
+    "image": "images/acolyteGlobadiers.jpg"
+  },
+  {
+    "name": "Ratling Guns",
+    "points": 150,
+    "image": "images/ratlinggun.jpg"
+  },
+  {
+    "name": "Warpfire Thrower",
+    "points": 140,
+    "image": "images/warpfireThrower.jpg"
+  },
+  {
+    "name": "Warmachine DoomWheel",
+    "points": 140,
+    "image": "images/doomwheel.jpg"
+  },
+  {
+    "name": "Warpvolt Scourgers",
+    "points": 190,
+    "image": "images/warpvoltScourgers.jpg"
+  },
+  {
+    "name": "Warplock Jezzails",
+    "points": 150,
+    "image": "images/warplockJezzails.jpg"
+  },
+  {
+    "name": "Warmachine Ratling Warpblaster",
+    "points": 180,
+    "image": "images/ratlingWarpblaster.jpg"
+  },
+  {
+    "name": "Warmachine Doom-Flayers",
+    "points": 130,
+    "image": "images/doomFlayers.jpg"
+  },
+  {
+    "name": "Warmachine Warp-Grinder",
+    "points": 170,
+    "image": "images/warpGrinder.jpg"
+  },
+  {
+    "name": "Hero Plague Priest",
+    "points": 110,
+    "image": "images/plaguePriest.jpg"
+  },
+  {
+    "name": "Plaguepack",
+    "points": 140,
+    "image": "images/plaguepack.jpg"
+  },
+  {
+    "name": "Warmachine Plagueclaw",
+    "points": 140,
+    "image": "images/plagueClaw.jpg"
+  },
+  {
+    "name": "Plague Monks",
+    "points": 140,
+    "image": "images/plagueMonks.jpg"
+  },
+  {
+    "name": "Hero Krittok Foulblade",
+    "points": 220,
+    "image": "images/krittok.jpg"
+  },
+  {
+    "name": "Hero Clawlord",
+    "points": 100,
+    "image": "images/clawlord.jpg"
+  },
+  {
+    "name": "Hero Clawlord On Gnaw-Beast",
+    "points": 160,
+    "image": "images/clawlordOnGnaw.jpg"
+  },
+  {
+    "name": "Clanrats",
+    "points": 150,
+    "image": "images/clanrats.jpg"
+  },
+  {
+    "name": "Stormvermin",
+    "points": 140,
+    "image": "images/stormvermin.jpg"
+  },
+  {
+    "name": "Bell of Doom",
+    "points": 0,
+    "image": "images/bellofdoom.jpg"
+  },
+  {
+    "name": "Gnawhole",
+    "points": 0,
+    "image": "images/gnawhole.jpg"
+  },
+  {
+    "name": "Vermintide",
+    "points": 0,
+    "image": "images/vermintide.jpg"
+  },
+  {
+    "name": "Warp Lightning Vortex",
+    "points": 0,
+    "image": "images/warplightningvortex.jpg"
+  },
+  {
+    "name": "Hero Deathmaster",
+    "points": 160,
+    "image": "images/deathmaster.jpg"
+  },
+  {
+    "name": "Night Runners",
+    "points": 130,
+    "image": "images/nightrunners.jpg"
+  },
+  {
+    "name": "Rat Ogors",
+    "points": 160,
+    "image": "images/ratogors.jpg"
+  },
+  {
+    "name": "Brood Terror",
+    "points": 300,
+    "image": "images/broodterror.jpg"
+  },
+  {
+    "name": "Hero Master Moulder",
+    "points": 100,
+    "image": "images/mastermoulder.jpg"
+  },
+  {
+    "name": "Hell Pit Abomination",
+    "points": 270,
+    "image": "images/hellpit.jpg"
+  }
+]
