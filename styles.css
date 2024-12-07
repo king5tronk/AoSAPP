@@ -13,8 +13,8 @@ header {
 
 main {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    flex-direction: column; /* Lägger alla sektioner i en kolumn som standard */
+    gap: 20px; /* Mellanrum mellan sektionerna */
     padding: 20px;
 }
 
@@ -48,3 +48,36 @@ li {
     justify-content: space-between;
     align-items: center;
 }
+#top-sections {
+    display: flex;
+    flex-direction: row; /* Placera sektionerna i en rad */
+    gap: 20px; /* Mellanrum mellan karaktärer och armé */
+    justify-content: space-between; /* Separerar dem jämt */
+    align-items: flex-start; /* Justerar sektionerna mot toppen */
+}
+
+/* Sektioner ska ta lika stor plats */
+#character-section, #army-section {
+    flex: 1; /* Gör att sektionerna får lika mycket utrymme */
+}
+
+/* Layout för bildsektionen */
+#character-image-section {
+    text-align: center; /* Centrera text och bild */
+}
+
+#character-image {
+    max-width:fit-content; /* Anpassar bildens bredd till sektionen */
+    height: auto; /* Bevarar bildens proportioner */
+    margin-top: 20px;
+    display: block; /* Se till att bilden är ett blockelement */
+}
+.army-character {
+    cursor: pointer;
+    text-decoration: underline;
+    color: blue;
+}
+.army-character:hover {
+    color: darkblue;
+}
+

@@ -11,28 +11,29 @@
         <h1>Armébyggare</h1>
     </header>
     <main>
-        <section id="character-section">
-            <h2>Existerande Karaktärer</h2>
-            <ul id="character-list"></ul>
-        </section>
-        
-        <section id="army-section">
-            <h2>Skapa Armé</h2>
-            <button id="save-army">Spara Armé</button>
-            <h3>Din Armé</h3>
-            <ul id="army-list"></ul>
-            <p><strong>Totala Poäng:</strong> <span id="total-points">0</span></p>
-        </section>
-        
-        <section id="character-view">
-            <h2>Visar Karaktär</h2>
-            <div id="character-details">
-                <p id="character-name"></p>
-                <p id="character-points"></p>
-            </div>
-        </section>
-        
-        <img id="character-image" src="" alt="">
+        <!-- Container för de två första sektionerna -->
+        <div id="top-sections">
+            <!-- Sektion för karaktärer -->
+            <section id="character-section">
+                <h2>Existerande Karaktärer</h2>
+                <select id="character-dropdown">
+                    <option value="" disabled selected>Välj en karaktär</option>
+                </select>
+                <button id="add-to-army">Lägg till i Armé</button> <!-- Ta bort disabled -->
+            </section>
+
+            <!-- Sektion för armén -->
+            <section id="army-section">
+                <h2>Skapa Armé</h2>
+                <button id="save-army">Spara Armé</button>
+                <h3>Din Armé</h3>
+                <ul id="army-list"></ul>
+                <p><strong>Totala Poäng:</strong> <span id="total-points">0</span></p>
+            </section>
+        </div>
+
+        <img id="character-image" src="" alt="Karaktärens bild" style="display: none;">
+
     </main>
     <script src="script.js"></script>
 </body>

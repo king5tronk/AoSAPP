@@ -6,46 +6,55 @@ let army = JSON.parse(localStorage.getItem("army")) || [];
 async function loadCharacters() {
     const response = await fetch("characters.json");
     characters = await response.json();
-    populateCharacterList();
+    populateCharacterDropdown();
     updateArmy();
 }
 
-// Funktion: Visa karaktärslista
-function populateCharacterList() {
-    const characterList = document.getElementById("character-list");
-    characterList.innerHTML = ""; // Rensa listan
+// Funktion: Visa karaktärslista i en rullgardinsmeny
+function populateCharacterDropdown() {
+    const dropdown = document.getElementById("character-dropdown");
+    dropdown.innerHTML = '<option value="" disabled selected>Välj en karaktär</option>';
     characters.forEach((character, index) => {
-        const li = document.createElement("li");
-        li.innerHTML = ` 
-            <span class="character-name" onclick="showCharacterDetails(${index})">${character.name}</span> (${character.points} poäng)
-            <button onclick="addToArmy(${index})">Lägg till i armé</button>
-        `;
-        characterList.appendChild(li);
+        const option = document.createElement("option");
+        option.value = index;
+        option.textContent = `${character.name} (${character.points} poäng)`;
+        dropdown.appendChild(option);
     });
 }
 
+// Funktion: Hantera val av karaktär från rullgardinsmenyn
+document.getElementById("character-dropdown").addEventListener("change", function () {
+    const index = this.value;
+    if (index !== "") {
+        showCharacterDetails(index); // Visa karaktärsdetaljer
+    }
+});
 
 // Funktion: Visa detaljer för en karaktär
 function showCharacterDetails(index) {
     const character = characters[index];
-
-    // Uppdatera karaktärens namn och poäng på sidan
-    document.getElementById("character-name").textContent = `Namn: ${character.name}`;
-    document.getElementById("character-points").textContent = `Poäng: ${character.points}`;
-    
-    // Visa karaktärens bild om den finns
     const image = document.getElementById("character-image");
-    if (character.image) {
-        image.src = character.image;  // Sätt källan till bilden (lägg till korrekt sökväg)
-        image.style.display = "block";  // Gör bilden synlig
-    } else {
-        image.style.display = "none";  // Dölja bilden om ingen bild finns
+
+    if (character) {
+        
+        // Visa karaktärens bild
+        if (character.image) {
+            image.src = character.image;
+            image.style.display = "block";
+        } else {
+            image.style.display = "none";
+        }
     }
 }
 
-
-
-
+// Funktion: Lägg till vald karaktär i armén
+document.getElementById("add-to-army").addEventListener("click", function () {
+    const dropdown = document.getElementById("character-dropdown");
+    const index = dropdown.value;
+    if (index !== "") {
+        addToArmy(index);
+    }
+});
 
 // Funktion: Lägg till karaktär i armén
 function addToArmy(index) {
@@ -64,18 +73,47 @@ function updateArmy() {
 
     army.forEach((character, index) => {
         const li = document.createElement("li");
-        li.textContent = `${character.name} (${character.points} poäng)`;
+
+        // Klickbart namn för att visa karaktärens bild
+        const characterName = document.createElement("span");
+        characterName.textContent = `${character.name} (${character.points} poäng)`;
+        characterName.classList.add("army-character");
+        characterName.addEventListener("click", () => {
+            showCharacterDetailsFromArmy(index);
+        });
+
+        // Ta bort-knapp
         const removeBtn = document.createElement("button");
         removeBtn.textContent = "Ta bort";
         removeBtn.addEventListener("click", () => {
             removeFromArmy(index);
         });
+
+        li.appendChild(characterName);
         li.appendChild(removeBtn);
         armyList.appendChild(li);
+
         totalPoints += character.points;
     });
 
     totalPointsEl.textContent = totalPoints;
+}
+
+// Funktion: Visa detaljer för en karaktär från armén
+function showCharacterDetailsFromArmy(index) {
+    const character = army[index];
+    const image = document.getElementById("character-image");
+
+    if (character) {
+        
+        // Visa karaktärens bild
+        if (character.image) {
+            image.src = character.image;
+            image.style.display = "block";
+        } else {
+            image.style.display = "none";
+        }
+    }
 }
 
 // Funktion: Ta bort karaktär från armén
