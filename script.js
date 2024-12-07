@@ -85,6 +85,7 @@ function updateArmy() {
         // Ta bort-knapp
         const removeBtn = document.createElement("button");
         removeBtn.textContent = "Ta bort";
+        removeBtn.classList.add("remove-btn");
         removeBtn.addEventListener("click", () => {
             removeFromArmy(index);
         });

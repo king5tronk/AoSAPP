@@ -80,4 +80,16 @@ li {
 .army-character:hover {
     color: darkblue;
 }
+button.remove-btn {
+    background-color: red; /* Röd bakgrundsfärg */
+    color: white; /* Vit textfärg */
+    border: none; /* Ta bort kantlinjen */
+    padding: 5px 10px; /* Padding för bättre utseende */
+    cursor: pointer; /* Handpekare vid hover */
+}
+
+button.remove-btn:hover {
+    background-color: darkred; /* Mörkare röd vid hover */
+}
+
 
